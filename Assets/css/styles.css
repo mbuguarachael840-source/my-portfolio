@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-bg-colour:  #131314;
+    --primary-text-colour:  #e3e3e3;
+     --primary-border-colour: #282a2c;
+     --primary-white-100:  #d5d8e1
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border border-box;
+    font-family: "Inter" , sans-serif;
+    color: var(--primary-text-colour);
+
+}
+
+html, body {
+    position: relative;
+    background-color: var(--primary-bg-colour);
+    scroll-behavior: smooth;
+   
+
+}
+
+/* resets */
+ul {
+    list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 0;
+    /* border-bottom:1px solid white; */
+
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__logo {
+    color: var(--primary-text-colour);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+    position:relative;
+}
+
+.header__logo span{
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-size: 3rem;
+    color: var(--primary-text-colour)
+}
+
+/* navbar */
+nav.header__navbar{
+    display:none;
+}
+
+.header__container button {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+
+}
+
+.header__container button div{
+    width: 100%;
+    padding: 0.05rem;
+    background-color: var(--primary-text-colour);
+    border-radius: 5px;
+
+}
+
+/* container responsive */
+.container{
+    max-width: 480px;
+    padding: 0 0.5rem;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+}
+
+.main.section {
+    width: 100%;
+    position: relative;
+
+}
+
+section.section{
+        padding: 1.85rem o;
+    }
+
+    /* hero section */
+/* TODO: To Be removed (for development) */
+.hero__section .container{
+    border: 1px solid green;
+}
+
+.hero__container .hero__profile-image {
+    display: none;
+}
+
+.hero__container .hero__profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.95rem;
+}
+
+.hero__profile-content p {
+    letter-spacing: -2px;
+    font-weight:600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--primary-white-100);
+}
+
+.hero__profile-content p span {
+    padding-left: 2px;
+}
+
+.hero__profile-content h1.hero__title{
+    font-size: 2.5rem;
+    line-height: 0.7;
+
+}
+
+.hero__profile-content h1.hero__title i {
+    text-transform: lowercase;
+    color: var(--primary-white-100);
+}
+
+.hero__profile-content .hero__cta {
+    display: flex;
+    gap: 0.59rem;
+    padding-top: 0.75rem;
+}
+
+.hero__profile-content .hero__cta button {
+    border: 1px solid var(--primary-border-colour);
+    padding: 10px 15px;
+    font-size: 11px;
+    border-radius: 20px;
+
+
+}
+
+.hero__profile-content .hero__cta button:first-child{
+    background-color: var(--primary-border-colour);
+
+
+}
+
+.hero__profile-content .hero__cta button:first-child:hover {
+    background-color: transparent;
+    color: var(--primary-white-100);
+
+
+}
+
+.hero__profile-content .hero__cta button:last-child:hover{
+    background-color: var(--primary-border-colour);
+
+
+}
+
+/* footer */
+
+
+
+
+/* Tablets */
+@media ( min-width:768px) {
+.container{ 
+    max-width: 768px;
+    padding: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+}
+
+.header__logo{
+    font-size: 1.rem;
+    font-weight: 700;
+}
+/* Navigation */
+nav ul.header__navlinks,
+nav.header__navbar {
+    display:flex;
+    align-items: center;
+}
+nav ul.header__navlinks {
+    border:1px solid var(--primary-border-colour);
+    border-radius: 20px;
+}
+nav ul.header__navlinks li {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: a11 0.3s ease-in-out;
+
+}
+
+nav ul.header__navlinks li:hover {
+    background-color: var(--primary-border-colour);
+}
+
+
+
+
+
+
+/* laptops */
+@media ( min-width:1024px){
+.container{ 
+    max-width: 1024px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    
+}}
+
+
+/* desktop */
+@media (min-width: 1280px) {
+.container{ 
+    max-width: 1280px;
+    margin-left: 12rem;
+    margin-right: 12rem;
+
+}
+}
+
+/* media queries
+screens
+mobile 0-480px;
+tablets 481px-768px;
+laptops 79px-1024px;
+desktops 1025-1280p;
+*/
