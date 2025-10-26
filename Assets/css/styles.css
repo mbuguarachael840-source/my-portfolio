@@ -122,12 +122,23 @@ section.section{
 
     /* hero section */
 /* TODO: To Be removed (for development) */
-.hero__section .container{
+.hero__container{
     border: 1px solid green;
+    display: flex;
+    gap: 50px;
 }
 
-.hero__container .hero__profile-image {
-    display: none;
+.hero__profile-image {
+    display: flex;
+    /* width: 100px; */
+    height: 100px;
+    border-radius: 80px;
+    border: 1px solid rgba(40, 17, 16, 0.04);
+    /* align-items: center; */
+    /* justify-content: center; */
+
+     
+
 }
 
 .hero__container .hero__profile-content {
