@@ -122,6 +122,7 @@ section.section{
 
     /* hero section */
 /* TODO: To Be removed (for development) */
+
 .hero__container{
     border: 1px solid green;
     display: flex;
@@ -129,16 +130,7 @@ section.section{
 }
 
 .hero__container.hero__profile-image {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    border-radius: 80px;
-    border: 1px solid rgba(40, 17, 16, 0.04);
-    padding-top: 20px;
-    /* align-items: center; */
-    /* justify-content: center; */
-
-     
+    display: none;
 
 }
 
@@ -271,6 +263,28 @@ nav ul.header__navlinks li {
 nav ul.header__navlinks li:hover {
     background-color: var(--primary-border-colour);
 }
+
+.hero__container{
+    border: 1px solid green;
+    /* display: flex; */
+    gap: 50px;}
+
+.hero__container.hero__profile-image 
+    /* display: flex;} */
+
+.hero__profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgba(40, 17, 16, 0.04);
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+
+     
+
+}
+
 
 
 
